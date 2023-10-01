@@ -1,7 +1,7 @@
 document.getElementById('student-form').addEventListener('submit', function (e) {
     e.preventDefault();
     const formData = new FormData(this);
-    fetch('/submit', {
+    fetch('/results.py', { // Update the URL to '/results.py'
         method: 'POST',
         body: formData,
     })
