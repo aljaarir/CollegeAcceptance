@@ -12,13 +12,7 @@ colleges = [
     {"name": "Dartmouth College", "gpaRequirement": 3.4, "acceptanceRate": 6.2, "tuitionInState": 60870, "tuitionOutOfState": 55000}
 ]
 
-# Function to find matching colleges based on GPA
-def find_matching_colleges(input_gpa):
-    matching_colleges = []
-    for college in colleges:
-        if input_gpa >= college["gpaRequirement"]:
-            matching_colleges.append(college)
-    return matching_colleges
+
 
 # Get form data
 form = cgi.FieldStorage()
@@ -26,6 +20,14 @@ name = form.getvalue("name")
 gpa = float(form.getvalue("gpa"))
 field = form.getvalue("field")
 state = form.getvalue("state")
+
+# Function to find matching colleges based on GPA
+def find_matching_colleges(gpa):
+    matching_colleges = []
+    for college in colleges:
+        if gpa >= college["gpaRequirement"]:
+            matching_colleges.append(college)
+    return matching_colleges
 
 # Find matching colleges based on GPA
 matching_colleges = find_matching_colleges(gpa)
