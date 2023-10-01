@@ -2,46 +2,33 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Information</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Information</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div id="info-container">
-        <h2>Student Information</h2>
-        <form id="student-form" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
+  <div id="info-container">
+    <h2>Student Information</h2>
+    <form id="student-form" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
 
-            <label for="gpa">GPA:</label>
-            <input type="number" id="gpa" name="gpa" step="0.01" required><br><br>
+      <label for="gpa">GPA:</label>
+      <input type="number" id="gpa" name="gpa" step="0.01" required><br><br>
 
-            <label for="field">Field of Interest:</label>
-            <input type="text" id="field" name="field" required><br><br>
+      <label for="field">Field of Interest:</label>
+      <input type="text" id="field" name="field" required><br><br>
 
-            <label for="state">State:</label>
-            <input type="text" id="state" name="state" required><br><br>
+      <label for="state">State:</label>
+      <input type="text" id="state" name="state" required><br><br>
 
-            <input type="submit" value="Submit">
-        </form>
-    </div>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
 
-    <div id="results">
-        <h2>Colleges Acceptance Results</h2>
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>Acceptance Rate</th>
-                <th>Tuition In-State</th>
-                <th>Tuition Out-of-State</th>
-            </tr>
-            <!-- Display results here -->
-        </table>
-    </div>
-
-    <script src="b.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
